@@ -1,0 +1,186 @@
+@import url('https://fonts.googleapis.com/css2?family=Lunasima&display=swap');
+
+:root{
+    --main-color:#2980b9;
+    --red:#e74c3c;
+    --orange:#f39c12;
+    --black:#444;
+    --white:#fff;
+    --light-bg:#f5f5f5;
+    --light-color:#777;
+    --border:3px solid var(--black);
+    --box-shadow:0.5rem 1rem rgba(0,0,0,.1);
+}
+
+*{
+    font-family: 'Lunasima', sans-serif;
+    margin: 0; padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none; border: none;
+}
+
+
+*::selection{
+    color:var(--white);
+    background-color: var(--main-color);
+}
+
+::-webkit-scrollbar{
+    width: 1rem;
+    height: .5rem;
+}
+
+::-webkit-scrollbar-track{
+  background-color:none;
+}
+
+::-webkit-scrollbar-track{
+    background-color:none;
+  }
+
+html{
+    font-size: 62.5%;
+    overflow-x: hidden;
+}
+
+body{
+    background-color: var(--light-bg);
+}
+
+section{
+    max-width: 1500px;
+    margin:0 15px;
+    padding: 2rem;
+}
+
+.btn,
+.delete-btn,
+.option-btn{
+    display:block;
+    margin-top: 1rem;
+    border-radius: .4rem;
+    cursor:pointer;
+    width:100%;
+    font-size: 1.8rem;
+    color:var(--white);
+    padding: 1rem 3rem;
+    text-transform: capitalize;
+}
+
+.btn{
+    background-color: var(--main-color);
+}
+
+.delete-btn{
+    background-color: var(--red);
+}
+
+.option-btn{
+    background-color: var(--orange);
+}
+
+
+.btn:hover,
+.delete-btn:hover,
+.option-btn:hover{
+    background-color: var(--black);
+}
+
+
+
+
+.form-container{
+    min-height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding:20px;
+}
+
+.form-container form{
+    width: 500px;
+    border-radius: 5px;
+    border:var(--border);
+    padding: 20px;
+    text-align: center;
+    background-color: var(--white);
+}
+
+
+
+.form-container form .box{
+    width:100%;
+    border-radius: 4px;
+    border: var(--border);
+    padding: 12px 14px;
+    font-size:20px;
+    margin: 10px 0;
+
+}
+.flex-btn{
+    display: flex;
+    gap:1rem;
+}
+
+.message{
+    position: sticky;
+    top: 0;
+    max-width: 1200px;
+    margin: 0 auto;
+    background-color: var(--light-bg);
+    padding:2rem;
+    display: flex;
+    align-items: center;
+    gap:1rem;
+    justify-content: space-between;
+}
+
+.message span{
+    font-size: 2rem;
+    color:var(--black);
+
+}
+
+.message i{
+    font-size: 2.5rem;
+    color:var(--red);
+    cursor: pointer;
+}
+
+.message i:hover{
+    color: var(--black);
+}
+
+.form-container form h3{
+    font-size: 35px;
+    margin-bottom:10px;
+    text-transform: uppercase;
+    color: var(--black);
+}
+
+.form-container form .box{
+    width:100%;
+    border-radius: 4px;
+    border: var(--border);
+    padding: 12px 12px;
+    font-size:15px;
+    margin: 8px 0;
+
+}
+
+.form-container form p{
+    margin-top: 20px;
+    font-size: 15px;
+    color: var(--black);
+
+}
+
+.form-container form p a{
+     color: var(--red);
+}
+
+.form-container form p a:hover{
+    color: var(--blue);
+    text-decoration: underline;
+}
